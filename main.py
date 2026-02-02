@@ -21,7 +21,7 @@ import json
 UPGRADE_CONFIG = {
     "topics_to_browse": 15,        # 每次浏览话题数（加速升级）
     "likes_to_give": 5,            # 每次点赞数
-    "replies_to_post": 2,          # 每次回复数（谨慎设置）
+    "replies_to_post": 1,          # 每次回复数（谨慎设置）
 }
 
 # 回复内容池
@@ -71,8 +71,8 @@ if not PASSWORD:
 GOTIFY_URL = os.environ.get("GOTIFY_URL")
 GOTIFY_TOKEN = os.environ.get("GOTIFY_TOKEN")
 SC3_PUSH_KEY = os.environ.get("SC3_PUSH_KEY")
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN")  # Telegram Bot Token
-TG_CHAT_ID = os.environ.get("TG_CHAT_ID")  # Telegram Chat ID
+TG_BOT_TOKEN = os.environ.get("TELEGRAM_TOKEN")  # Telegram Bot Token
+TG_CHAT_ID = os.environ.get("TELEGRAM_USERID")  # Telegram Chat ID
 WECHAT_API_URL = os.environ.get("WECHAT_API_URL")   # 自定义微信 API 地址
 WECHAT_AUTH_TOKEN = os.environ.get("WECHAT_AUTH_TOKEN") # 自定义微信 Token
 LINUXDO_PROXY = os.environ.get("LINUXDO_PROXY")  # 代理设置
